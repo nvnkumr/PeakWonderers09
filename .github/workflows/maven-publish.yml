@@ -23,6 +23,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
+          cache-dependency-path: backend/pom.xml
 
       - name: Build and test
+        working-directory: ./backend
         run: mvn --batch-mode clean verify
