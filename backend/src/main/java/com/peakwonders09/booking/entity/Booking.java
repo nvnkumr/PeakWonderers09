@@ -38,7 +38,7 @@ public class Booking{
 	
 	@Enumerated(EnumType.STRING)
 	private BookingStatus bookingStatus;
-	
+		
 	@Enumerated(EnumType.STRING)
 	private PaymentStatus paymentStatus;
 	private LocalDateTime createdAt;

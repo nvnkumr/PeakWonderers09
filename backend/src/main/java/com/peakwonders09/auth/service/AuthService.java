@@ -18,7 +18,7 @@ public class AuthService{
 	private final JwtService jwtService;
 	
 	public AuthResponse register(RegisterRequest req){
-		if(userRepository.existByEmail(req.email())){
+		if(userRepository.existsByEmail(req.email())){
 			throw new IllegalArgumentException("Email already Registered");
 		}
 		

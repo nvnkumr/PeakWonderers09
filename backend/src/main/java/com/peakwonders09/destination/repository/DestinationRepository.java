@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface DestinationRepository extends JpaRepository<Destination, Long>{
 	List <Destination> findByActiveTrue();
-	List <Destination> findByNameCOntainingIgnoreCase(String name);
+	List <Destination> findByNameContainingIgnoreCase(String name);
 }
